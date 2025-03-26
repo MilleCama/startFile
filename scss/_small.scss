@@ -21,19 +21,41 @@ body {
 
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {border-bottom: 1px solid $greyColor;}
+#headerWrapper {
+    background-color: #c26c33; // Header background color
+    padding: 1rem 0;
+}
+
 header {
-    display: grid;
-    grid-template-columns: 50px auto;
-    column-gap: $gutter;
-    align-items: center; //vertically
-    padding: .5rem $gutter;
-    span {
-        font-size: 1.6rem;
-        font-weight: $lightWeight;
-        color: $primaryColor;
-    }
-} // end header
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // Pushes elements to each side
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo-link img {
+    height: 50px;
+}
+
+.company-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align:left;
+    flex-grow: 1; // Ensures text stays centered
+}
+
+.phone-number {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: auto; // Moves phone number to the right
+    padding-right: 1rem; // Adds spacing from the edge
+}
+
+// end header
 
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */

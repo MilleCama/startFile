@@ -321,20 +321,37 @@ body {
 
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
-  border-bottom: 1px solid #fefefe;
+  background-color: #c26c33;
+  padding: 1rem 0;
 }
 
 header {
-  display: grid;
-  grid-template-columns: 50px auto;
-  column-gap: 10px;
+  display: flex;
   align-items: center;
-  padding: 0.5rem 10px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-header span {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #1d295f;
+
+.logo-link img {
+  height: 50px;
+}
+
+.company-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.phone-number {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+  padding-right: 1rem;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
