@@ -1,0 +1,15 @@
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+    @media (min-width: 1200px) {
+        .shows {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    
+        .card {
+            max-width: 280px;
+        }
+    }
+}
+
+/* NAVIGATION STUFF GOES HERE  */

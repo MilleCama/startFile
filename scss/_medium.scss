@@ -1,0 +1,27 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: $gutter; 
+  } end ul
+  ul li a {
+    margin: 10px;
+  }
+  ul li a:hover {
+    text-decoration: underline 2px $accentColor;
+  } // end hover
+  @media (min-width: 768px) {
+    .shows {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+} // end nav
